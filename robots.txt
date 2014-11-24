@@ -1,0 +1,1 @@
+User-agent: * Disallow: /home/wp_jrtvcx/onefourthree.com/wp-content/themes/
