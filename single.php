@@ -198,7 +198,7 @@
 						<li class="opcover">
 							<a href="<?php echo get_permalink(); ?>">
 								<h1>
-									<span>Nº<?php the_field('session_number'); ?></span><?php the_title(); ?>
+									<span>Nº<?php the_field('session_number'); ?></span> <?php the_title(); ?>
 								</h1>
 								<img src="<?php the_field('non_featured_image'); ?>" />
 							</a>
