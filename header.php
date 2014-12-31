@@ -10,7 +10,7 @@
     <meta charset="utf-8" />
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 	<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
-    <title><?php if( is_front_page() ) { echo 'Home'; } else { echo get_the_title(); } ?> || 143</title>
+    <title>143 | <?php if( is_front_page() ) { echo 'Home'; } else { echo get_the_title(); } ?></title>
     <link rel="stylesheet" media="screen" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
   <!--[if lt IE 9]>
 	  <script src="<?php echo get_bloginfo('template_directory');?>/javascripts/vendor/html5shim.js"></script>
@@ -18,8 +18,9 @@
 	<script src="<?php echo get_bloginfo('template_directory');?>/javascripts/vendor/modernizr.js"></script>
   </head>
   <body class="<?php if(is_single()) { echo 'session'; } else { echo 'index'; } ?>">
+  <div class="container-page">
     <header>
-	    <div class="container">
+	    <div class="new-container">
 		    <div class="logo">
 			    <a href="/">143</a>
 		    </div>

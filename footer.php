@@ -1,5 +1,5 @@
 	<footer>
-		<div class="container">
+		<div class="new-container">
 			<div class="copy">
 				Copyright 143
 			</div>
@@ -18,6 +18,7 @@
 			</div>
 		</div>
 	</footer>
+	</div>
     <script src="<?php echo get_bloginfo('template_directory');?>/javascripts/app.js"></script>
   </body>
 </html>

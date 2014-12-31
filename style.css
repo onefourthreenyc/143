@@ -1,656 +1,821 @@
 @import url('stylesheets/normalize.css');
 /* Desktops and laptops ----------- */
-/* line 2, /Users/administrator/.rvm/gems/ruby-2.0.0-p247/gems/neat-1.5.0/app/assets/stylesheets/grid/_grid.scss */
+/* line 2, /home/fabian/.rvm/gems/ruby-2.1.2/gems/neat-1.5.0/app/assets/stylesheets/grid/_grid.scss */
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
 
-/* line 1, /Users/administrator/sites/143/source/stylesheets/tools/_extends.scss */
+/* line 1, /home/fabian/projects/143/source/stylesheets/tools/_extends.scss */
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
+    list-style: none;
+    margin: 0;
+    padding: 0; }
 
-/* line 9, /Users/administrator/sites/143/source/stylesheets/tools/_extends.scss */
+/* line 9, /home/fabian/projects/143/source/stylesheets/tools/_extends.scss */
 .session #session-header .play .btn, .session .session-head .play .btn {
-  display: inline-block;
-  background: #ea451e;
-  line-height: 46px;
-  height: 45px;
-  font-size: 12px;
-  padding: 0 20px;
-  color: white; }
-  /* line 18, /Users/administrator/sites/143/source/stylesheets/tools/_extends.scss */
-  .session #session-header .play .btn i, .session .session-head .play .btn i {
+    display: inline-block;
+    background: #ea451e;
+    line-height: 46px;
+    height: 45px;
+    font-size: 12px;
+    padding: 0 20px;
+    color: white; }
+/* line 18, /home/fabian/projects/143/source/stylesheets/tools/_extends.scss */
+.session #session-header .play .btn i, .session .session-head .play .btn i {
     font-size: 20px;
     position: relative;
     top: 5px;
     margin-right: 7px; }
-  /* line 25, /Users/administrator/sites/143/source/stylesheets/tools/_extends.scss */
-  .session #session-header .play .btn.btn-small, .session .session-head .play .btn.btn-small {
+/* line 25, /home/fabian/projects/143/source/stylesheets/tools/_extends.scss */
+.session #session-header .play .btn.btn-small, .session .session-head .play .btn.btn-small {
     line-height: 36px;
     height: 35px;
     font-size: 12px;
     padding: 0 13px; }
-    /* line 31, /Users/administrator/sites/143/source/stylesheets/tools/_extends.scss */
-    .session #session-header .play .btn.btn-small i, .session .session-head .play .btn.btn-small i {
-      top: 2px;
-      font-size: 15px; }
+/* line 31, /home/fabian/projects/143/source/stylesheets/tools/_extends.scss */
+.session #session-header .play .btn.btn-small i, .session .session-head .play .btn.btn-small i {
+    top: 2px;
+    font-size: 15px; }
 
-@font-face {
-  font-family: 'GiorgioSansBold';
-  src: url("fonts/giorgio/giorgiosans-bold.eot");
-  src: url("fonts/giorgio/giorgiosans-bold.eot") format("embedded-opentype"), url("fonts/giorgio/giorgiosans-bold.woff2") format("woff2"), url("fonts/giorgio/giorgiosans-bold.woff") format("woff"), url("fonts/giorgio/giorgiosans-bold.ttf") format("truetype"), url("fonts/giorgio/giorgiosans-bold.svg#GiorgioSansBold") format("svg"); }
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("fonts/icomoon/icomoon.eot?fdsp9a");
-  src: url("fonts/icomoon/icomoon.eot?#iefixfdsp9a") format("embedded-opentype"), url("fonts/icomoon/icomoon.woff?fdsp9a") format("woff"), url("fonts/icomoon/icomoon.ttf?fdsp9a") format("truetype"), url("fonts/icomoon/icomoon.svg?fdsp9a#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-/* line 22, /Users/administrator/sites/143/source/stylesheets/base/_fonts.scss */
-[class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-/* line 36, /Users/administrator/sites/143/source/stylesheets/base/_fonts.scss */
-.icon-arrow-left:before {
-  content: "\e605"; }
-
-/* line 39, /Users/administrator/sites/143/source/stylesheets/base/_fonts.scss */
-.icon-arrow-right:before {
-  content: "\e606"; }
-
-/* line 42, /Users/administrator/sites/143/source/stylesheets/base/_fonts.scss */
-.icon-play:before {
-  content: "\e604"; }
-
-/* line 45, /Users/administrator/sites/143/source/stylesheets/base/_fonts.scss */
-.icon-facebook:before {
-  content: "\e600"; }
-
-/* line 48, /Users/administrator/sites/143/source/stylesheets/base/_fonts.scss */
-.icon-instagram:before {
-  content: "\e601"; }
-
-/* line 51, /Users/administrator/sites/143/source/stylesheets/base/_fonts.scss */
-.icon-twitter:before {
-  content: "\e602"; }
-
-/* line 54, /Users/administrator/sites/143/source/stylesheets/base/_fonts.scss */
-.icon-soundcloud:before {
-  content: "\e603"; }
-
-/* line 1, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-body {
-  font-family: "Helvetica", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  min-width: 320px;
-  padding-top: 65px; }
-
-/* line 8, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 10px;
-  font-weight: normal; }
-
-/* line 17, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-a {
-  text-decoration: none; }
-
-/* line 21, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-strong {
-  font-weight: normal; }
-
-/* line 25, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-img {
-  display: block;
-  width: 100%; }
-
-/* line 30, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-::selection {
-  background: #b3d4fc;
-  text-shadow: none; }
-
-/* line 35, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-.container {
-  *zoom: 1;
-  max-width: 49.625em;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0 auto; }
-  /* line 18, /Users/administrator/.rvm/gems/ruby-2.0.0-p247/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
-  .container:before, .container:after {
+/* line 39, /home/fabian/projects/143/source/stylesheets/tools/_extends.scss */
+.new-container {
+    *zoom: 1; }
+/* line 18, /home/fabian/.rvm/gems/ruby-2.1.2/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+.new-container:before, .new-container:after {
     content: " ";
     display: table; }
-  /* line 23, /Users/administrator/.rvm/gems/ruby-2.0.0-p247/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
-  .container:after {
+/* line 23, /home/fabian/.rvm/gems/ruby-2.1.2/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+.new-container:after {
     clear: both; }
-  @media screen and (min-width: 1024px) {
-    /* line 35, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-    .container {
-      max-width: 60.75em; } }
-  @media screen and (min-width: 1280px) {
-    /* line 35, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-    .container {
-      max-width: 72.1875em; } }
 
-/* line 49, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
+@font-face {
+    font-family: 'GiorgioSansBold';
+    src: url("fonts/giorgio/giorgiosans-bold.eot");
+    src: url("fonts/giorgio/giorgiosans-bold.eot") format("embedded-opentype"), url("fonts/giorgio/giorgiosans-bold.woff2") format("woff2"), url("fonts/giorgio/giorgiosans-bold.woff") format("woff"), url("fonts/giorgio/giorgiosans-bold.ttf") format("truetype"), url("fonts/giorgio/giorgiosans-bold.svg#GiorgioSansBold") format("svg"); }
+
+@font-face {
+    font-family: 'icomoon';
+    src: url("fonts/icomoon/icomoon.eot?fdsp9a");
+    src: url("fonts/icomoon/icomoon.eot?#iefixfdsp9a") format("embedded-opentype"), url("fonts/icomoon/icomoon.woff?fdsp9a") format("woff"), url("fonts/icomoon/icomoon.ttf?fdsp9a") format("truetype"), url("fonts/icomoon/icomoon.svg?fdsp9a#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+/* line 22, /home/fabian/projects/143/source/stylesheets/base/_fonts.scss */
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
+/* line 36, /home/fabian/projects/143/source/stylesheets/base/_fonts.scss */
+.icon-arrow-left:before {
+    content: "\e605"; }
+
+/* line 39, /home/fabian/projects/143/source/stylesheets/base/_fonts.scss */
+.icon-arrow-right:before {
+    content: "\e606"; }
+
+/* line 42, /home/fabian/projects/143/source/stylesheets/base/_fonts.scss */
+.icon-play:before {
+    content: "\e604"; }
+
+/* line 45, /home/fabian/projects/143/source/stylesheets/base/_fonts.scss */
+.icon-facebook:before {
+    content: "\e600"; }
+
+/* line 48, /home/fabian/projects/143/source/stylesheets/base/_fonts.scss */
+.icon-instagram:before {
+    content: "\e601"; }
+
+/* line 51, /home/fabian/projects/143/source/stylesheets/base/_fonts.scss */
+.icon-twitter:before {
+    content: "\e602"; }
+
+/* line 54, /home/fabian/projects/143/source/stylesheets/base/_fonts.scss */
+.icon-soundcloud:before {
+    content: "\e603"; }
+
+/* line 1, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+html, body {
+    height: 100%; }
+
+/* line 5, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+body {
+    font-family: "Helvetica", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased; }
+
+/* line 10, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 10px;
+    font-weight: normal; }
+
+/* line 19, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+a {
+    text-decoration: none; }
+
+/* line 23, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+strong {
+    font-weight: normal; }
+
+/* line 27, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+img {
+    display: block;
+    width: 100%; }
+
+/* line 32, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+::selection {
+    background: #b3d4fc;
+    text-shadow: none; }
+
+/* line 37, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.container {
+    *zoom: 1;
+    max-width: 49.625em;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto; }
+/* line 18, /home/fabian/.rvm/gems/ruby-2.1.2/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+.container:before, .container:after {
+    content: " ";
+    display: table; }
+/* line 23, /home/fabian/.rvm/gems/ruby-2.1.2/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+.container:after {
+    clear: both; }
+@media screen and (min-width: 1024px) {
+    /* line 37, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+    .container {
+        max-width: 60.75em; } }
+@media screen and (min-width: 1280px) {
+    /* line 37, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+    .container {
+        max-width: 72.1875em; } }
+
+/* line 51, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .social li, .navigation li {
-  display: inline-block;
-  vertical-align: baseline;
-  zoom: 1;
-  *display: inline;
-  *vertical-align: auto; }
-  /* line 52, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-  .social li a, .navigation li a {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto; }
+/* line 54, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.social li a, .navigation li a {
     text-decoration: none;
     color: #cccccc; }
 
-/* line 60, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
+/* line 63, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .social.square ul {
-  border-left: #474747 solid 1px;
-  overflow: hidden; }
-/* line 65, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
+    border-left: #474747 solid 1px;
+    overflow: hidden; }
+/* line 68, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .social.square li {
-  display: block;
-  float: left;
-  border: #474747 solid 1px;
-  border-left: none;
-  text-align: center; }
-  /* line 72, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-  .social.square li a {
+    display: block;
+    float: left;
+    border: #474747 solid 1px;
+    border-left: none;
+    text-align: center; }
+/* line 75, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.social.square li.facebook:hover a {
+    background: #3b5998; }
+/* line 78, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.social.square li.facebook:hover a i {
+    color: #344f87; }
+/* line 84, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.social.square li.twitter:hover a {
+    background: #33ccfe; }
+/* line 87, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.social.square li.twitter:hover a i {
+    color: #2db5e1; }
+/* line 92, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.social.square li a {
     width: 56px;
     height: 43px;
     display: block;
     color: #474747;
     line-height: 48px; }
 @media screen and (min-width: 768px) {
-  /* line 83, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-  .social.square li a {
-    width: 44px;
-    height: 43px; } }
+    /* line 103, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+    .social.square li a {
+        width: 44px;
+        height: 43px; } }
 
-/* line 90, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
+/* line 110, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .fullwidth {
-  margin: 60px 0; }
+    margin: 60px 0; }
 
-/* line 95, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
+/* line 115, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 blockquote p {
-  margin: 40px 0 50px;
-  color: #020202;
-  text-transform: uppercase; }
+    margin: 40px 0 50px;
+    color: #020202;
+    text-transform: uppercase; }
 
-/* line 102, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
+/* line 122, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .box-list {
-  background: #ededed;
-  padding: 22px 0 25px;
-  text-align: center; }
-  /* line 107, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-  .box-list h2 {
+    background: #ededed;
+    padding: 22px 0 25px;
+    text-align: center; }
+/* line 127, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.box-list h2 {
     font-size: 18px;
     color: #6b6b6b;
     margin-bottom: 12px; }
-  /* line 113, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-  .box-list li {
+/* line 133, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.box-list li {
     margin-bottom: 5px; }
-  /* line 117, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-  .box-list a {
+/* line 137, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.box-list a {
     color: #6b6b6b;
     font-size: 15px;
-    text-decoration: underline; }
-  @media screen and (min-width: 768px) {
-    /* line 102, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 1px solid #6b6b6b; }
+/* line 144, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.box-list a:hover {
+    opacity: .6; }
+@media screen and (min-width: 768px) {
+    /* line 122, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
     .box-list {
-      width: 190px;
-      float: right;
-      padding: 25px;
-      margin-left: 5px;
-      margin-top: 3px;
-      text-align: left;
-      margin-right: 20px; } }
-  @media screen and (min-width: 1024px) {
-    /* line 102, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
+        width: 190px;
+        float: right;
+        padding: 25px;
+        margin-left: 5px;
+        margin-top: 3px;
+        text-align: left;
+        margin-right: 20px; } }
+@media screen and (min-width: 1024px) {
+    /* line 122, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
     .box-list {
-      float: left;
-      margin-left: 5px; } }
-  @media screen and (min-width: 1280px) {
-    /* line 102, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
+        float: left;
+        margin-left: 5px; } }
+@media screen and (min-width: 1280px) {
+    /* line 122, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
     .box-list {
-      width: 230px;
-      margin: 3px 0 0; } }
+        width: 230px;
+        margin: 3px 0 0; } }
 
 @media screen and (min-width: 768px) {
-  /* line 144, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-  .sideleft {
-    float: left;
-    margin-left: 30px; } }
+    /* line 171, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+    .sideleft {
+        float: left;
+        margin-left: 30px; } }
 
 @media screen and (min-width: 768px) {
-  /* line 152, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
-  .sideright {
-    float: right;
-    margin-right: 30px; } }
+    /* line 179, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+    .sideright {
+        float: right;
+        margin-right: 30px; } }
 
-/* line 159, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
+/* line 186, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .img-holder {
-  margin: 60px 0; }
+    margin: 21px 0; }
 
-/* line 166, /Users/administrator/sites/143/source/stylesheets/base/_global.scss */
+/* line 193, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .play a {
-  color: white; }
+    color: white; }
 
-/* line 1, /Users/administrator/sites/143/source/stylesheets/partials/_footer.scss */
+/* line 1, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
 footer {
-  background: black;
-  height: 51px;
-  line-height: 51px;
-  color: gray;
-  overflow: hidden; }
-  /* line 8, /Users/administrator/sites/143/source/stylesheets/partials/_footer.scss */
-  footer a {
+    background: black;
+    height: 51px;
+    line-height: 51px;
     color: gray;
-    text-decoration: underline; }
-  /* line 13, /Users/administrator/sites/143/source/stylesheets/partials/_footer.scss */
-  footer .copy {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden; }
+/* line 12, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+footer a.link {
+    color: gray;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: gray; }
+/* line 19, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+footer a.link:hover {
+    color: #DDD;
+    border-bottom-color: #DDD; }
+/* line 26, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+footer .copy {
     float: left;
-    margin-left: 15px;
     font-size: 0.75em; }
-  /* line 19, /Users/administrator/sites/143/source/stylesheets/partials/_footer.scss */
-  footer .by {
+/* line 31, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+footer .by {
     display: none;
     float: right;
-    margin-right: 30px;
     font-size: 0.75em; }
-  /* line 26, /Users/administrator/sites/143/source/stylesheets/partials/_footer.scss */
-  footer .social {
-    margin-right: 20px;
+/* line 37, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+footer .social {
     margin-top: 0;
     float: right; }
-    /* line 31, /Users/administrator/sites/143/source/stylesheets/partials/_footer.scss */
-    footer .social li {
-      margin-left: 15px; }
-    /* line 35, /Users/administrator/sites/143/source/stylesheets/partials/_footer.scss */
-    footer .social a {
-      text-decoration: none;
-      font-size: 1.125em; }
-  @media screen and (min-width: 768px) {
-    /* line 42, /Users/administrator/sites/143/source/stylesheets/partials/_footer.scss */
-    footer .copy {
-      margin-left: 30px; }
-    /* line 46, /Users/administrator/sites/143/source/stylesheets/partials/_footer.scss */
+/* line 41, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+footer .social li {
+    margin-left: 15px; }
+/* line 45, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
+footer .social a {
+    text-decoration: none;
+    font-size: 1.125em;
+    opacity: 0.5; }
+@media screen and (min-width: 768px) {
+    /* line 53, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
     footer .by {
-      display: block; }
-    /* line 50, /Users/administrator/sites/143/source/stylesheets/partials/_footer.scss */
+        display: block; }
+    /* line 57, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
     footer .social {
-      display: none; } }
+        display: none; } }
 
-/* line 2, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
+/* line 2, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
 header {
-  position: fixed;
-  z-index: 3;
-  background: white;
-  width: 100%;
-  top: 0; }
-
+    position: fixed;
+    z-index: 3;
+    background: white;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 1px 5px 0px rgba(119, 119, 119, 0.5); }
 @media screen and (min-width: 1024px) {
-  /* line 11, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
-  header {
-    position: absolute; } }
-/* line 16, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
+    /* line 2, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+    header {
+        position: absolute; } }
+
+/* line 15, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
 header {
-  height: 65px; }
-  /* line 19, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
-  header .social, header .navigation {
+    height: 65px; }
+/* line 18, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+header .social, header .navigation {
     float: right;
     margin-top: 25px; }
-  /* line 24, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
-  header .navigation {
-    margin-right: 15px; }
-    /* line 27, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
-    header .navigation a {
-      color: #999999;
-      font-size: 0.875em; }
-  /* line 33, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
-  header .social {
+/* line 24, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+header .navigation a {
+    color: #999999;
+    font-size: 0.875em;
+    padding-bottom: 5px;
+    display: inline-block;
+    line-height: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: transparent; }
+/* line 34, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+header .navigation a:hover {
+    border-bottom-color: #999999; }
+/* line 41, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+header .social {
     display: none; }
-    /* line 36, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
-    header .social li {
-      margin-left: 15px; }
-    /* line 40, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
-    header .social a {
-      color: #999999; }
-  @media screen and (min-width: 768px) {
-    /* line 46, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
+/* line 44, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+header .social li {
+    margin-left: 15px; }
+/* line 47, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+header .social li:hover a {
+    opacity: 0.5; }
+/* line 52, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+header .social a {
+    color: #999999; }
+@media screen and (min-width: 768px) {
+    /* line 58, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
     header .navigation {
-      margin-right: 0; }
-    /* line 50, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
+        margin-right: 0; }
+    /* line 62, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
     header .social {
-      display: block;
-      margin-right: 15px; } }
-  @media screen and (min-width: 1024px) {
-    /* line 57, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
-    header .social {
-      margin-right: 5px; } }
+        display: block; } }
 
-/* line 63, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
+/* line 69, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
 .logo {
-  float: left;
-  padding: 15px 0;
-  margin-left: 15px; }
-  /* line 68, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
-  .logo a {
+    float: left;
+    padding: 15px 0; }
+/* line 73, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+.logo a {
     display: block;
     width: 104px;
     height: 35px;
     background-image: url("images/logo.png");
     text-indent: -99999px; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      /* line 68, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
-      .logo a {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    /* line 73, /home/fabian/projects/143/source/stylesheets/partials/_header.scss */
+    .logo a {
         background-image: url("images/logo@2x.png");
         background-size: 104px 35px; } }
-  @media screen and (min-width: 1024px) {
-    /* line 63, /Users/administrator/sites/143/source/stylesheets/partials/_header.scss */
-    .logo {
-      margin-left: 5px; } }
 
 @media screen and (min-width: 1024px) {
-  /* line 2, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-  .s-about .container {
-    padding: 0 90px; } }
-/* line 7, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
+    /* line 2, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+    .s-about .container {
+        padding: 0 90px; } }
+/* line 7, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
 .s-about .about-detail {
-  text-align: center;
-  padding: 18px 15px 0; }
-/* line 12, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
+    text-align: center;
+    padding: 18px 15px 0; }
+/* line 12, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
 .s-about h1 {
-  font-size: 1.0625em;
-  line-height: 26px;
-  margin-bottom: 60px; }
-  /* line 17, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-  .s-about h1 a {
+    font-size: 1.0625em;
+    line-height: 26px;
+    margin-bottom: 60px; }
+/* line 17, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+.s-about h1 a {
     color: black;
     text-decoration: underline; }
 @media screen and (min-width: 768px) {
-  /* line 24, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-  .s-about .about-detail {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 26px 20px 0; }
-  /* line 30, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-  .s-about h1 {
-    margin-bottom: 48px;
-    line-height: 37px;
-    font-size: 1.75em; } }
+    /* line 24, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+    .s-about .about-detail {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 26px 20px 0; }
+    /* line 30, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+    .s-about h1 {
+        margin-bottom: 48px;
+        line-height: 1.27778em;
+        font-size: 2.25em; } }
 @media screen and (min-width: 1024px) {
-  /* line 38, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-  .s-about .about-detail {
-    padding: 42px 0 0; }
-  /* line 42, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-  .s-about h1 {
-    margin-bottom: 85px; } }
+    /* line 38, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+    .s-about .about-detail {
+        padding: 42px 0 0; }
+    /* line 42, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+    .s-about h1 {
+        margin-bottom: 85px; } }
 
-/* line 48, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
+/* line 48, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
 .team {
-  margin-bottom: 33px;
-  padding: 0 15px; }
-  @media screen and (min-width: 1024px) {
-    /* line 49, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
+    margin-bottom: 33px;
+    padding: 0 15px; }
+@media screen and (min-width: 1024px) {
+    /* line 49, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
     .team .container {
-      padding: 0 90px; } }
-  /* line 58, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-  .team li {
+        padding: 0 90px; } }
+/* line 58, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+.team li {
     border-top: #d0d0d0 solid 1px;
     color: #989898;
     padding: 10px 0 25px;
     overflow: hidden; }
-    /* line 64, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-    .team li a {
-      color: #989898;
-      text-decoration: underline; }
-  /* line 70, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-  .team h2 {
+/* line 64, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+.team li a {
+    color: #989898;
+    text-decoration: underline; }
+/* line 70, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+.team h2 {
     font-size: 15px;
     font-size: 0.875em;
     color: black;
     margin-bottom: 10px; }
-  /* line 77, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-  .team .team-member-position {
+/* line 77, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+.team .team-member-position {
     font-size: 0.875em; }
-  /* line 81, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-  .team .team-member {
+/* line 81, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+.team .team-member {
     padding: 20px 0 10px; }
-  /* line 87, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-  .team .team-info p {
+/* line 87, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+.team .team-info p {
     line-height: 25px;
     font-size: 0.875em; }
-  @media screen and (min-width: 768px) {
-    /* line 48, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
+@media screen and (min-width: 768px) {
+    /* line 48, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
     .team {
-      padding: 0 20px; }
-      /* line 96, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-      .team h2 {
+        padding: 0 20px; }
+    /* line 96, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+    .team h2 {
         font-size: 0.9375em; }
-      /* line 100, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-      .team .team-member-position {
+    /* line 100, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+    .team .team-member-position {
         font-size: 0.9375em; }
-      /* line 104, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-      .team .team-member {
-        float: left; }
-      /* line 108, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-      .team .team-info {
-        margin-left: 32%; } }
-  @media screen and (min-width: 1024px) {
-    /* line 115, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
+    /* line 104, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
     .team .team-member {
-      padding: 38px 0; }
-    /* line 120, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
+        float: left; }
+    /* line 108, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
     .team .team-info {
-      min-height: 207px;
-      padding: 18px 26px; }
-      /* line 124, /Users/administrator/sites/143/source/stylesheets/modules/_about.scss */
-      .team .team-info p {
+        margin-left: 32%; } }
+@media screen and (min-width: 1024px) {
+    /* line 115, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+    .team .team-member {
+        padding: 28px 0; }
+    /* line 120, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+    .team .team-info {
+        min-height: 207px;
+        padding: 18px 26px; }
+    /* line 124, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
+    .team .team-info p {
         font-size: 0.9375em; } }
 
-/* line 1, /Users/administrator/sites/143/source/stylesheets/modules/_home.scss */
-.homepage {
-  padding-left: 10px;
-  padding-right: 10px; }
-  /* line 6, /Users/administrator/sites/143/source/stylesheets/modules/_home.scss */
-  .homepage article {
+/* line 1, /home/fabian/projects/143/source/stylesheets/modules/_containers.scss */
+.container-page {
+    position: relative;
+    min-height: 100%;
+    padding-top: 65px;
+    padding-bottom: 51px; }
+
+/* line 10, /home/fabian/projects/143/source/stylesheets/modules/_containers.scss */
+.new-container {
+    padding: 0 15px;
+    position: relative; }
+@media screen and (min-width: 1024px) {
+    /* line 10, /home/fabian/projects/143/source/stylesheets/modules/_containers.scss */
+    .new-container {
+        padding: 0 30px; } }
+
+/* line 3, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+.homepage article {
     margin-bottom: 10px; }
 
-/* line 11, /Users/administrator/sites/143/source/stylesheets/modules/_home.scss */
+/* line 8, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
 .opcover {
-  background: black; }
-  /* line 14, /Users/administrator/sites/143/source/stylesheets/modules/_home.scss */
-  .opcover a {
+    background: black; }
+/* line 11, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+.opcover a {
     color: white;
     display: block;
     position: relative; }
-    /* line 20, /Users/administrator/sites/143/source/stylesheets/modules/_home.scss */
-    .opcover a:hover img {
-      opacity: .9; }
-  /* line 26, /Users/administrator/sites/143/source/stylesheets/modules/_home.scss */
-  .opcover h1 {
+/* line 17, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+.opcover a:hover img {
+    opacity: .9; }
+/* line 23, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+.opcover h1 {
+    font-size: 1em;
+    line-height: 1em;
     font-family: "GiorgioSansBold", sans-serif;
     position: absolute;
-    top: 27px;
-    left: 30px;
-    font-size: 37px;
-    line-height: 28px;
-    z-index: 2; }
-    /* line 35, /Users/administrator/sites/143/source/stylesheets/modules/_home.scss */
-    .opcover h1 span {
-      display: block;
-      font-size: 37px;
-      line-height: 28px; }
-  /* line 42, /Users/administrator/sites/143/source/stylesheets/modules/_home.scss */
-  .opcover img {
+    top: 7px;
+    left: 15px;
+    z-index: 2;
+    display: inline-block; }
+@media screen and (min-width: 768px) {
+    /* line 23, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+    .opcover h1 {
+        left: 15px;
+        top: 27px; } }
+@media screen and (min-width: 1024px) {
+    /* line 23, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+    .opcover h1 {
+        left: 30px; } }
+/* line 42, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+.opcover h1 .rank {
+    display: block;
+    font-size: 2.3125em;
+    line-height: 100%; }
+@media screen and (min-width: 1024px) {
+    /* line 42, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+    .opcover h1 .rank {
+        font-size: 3.4375em;
+        line-height: 100%; } }
+/* line 54, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+.opcover h1 .name {
+    margin-top: -7px; }
+@media screen and (min-width: 1024px) {
+    /* line 54, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+    .opcover h1 .name {
+        margin-top: -11px; } }
+/* line 61, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+.opcover h1 .name span {
+    font-size: 2.3125em;
+    display: inline-block;
+    line-height: 100%;
+    vertical-align: top; }
+@media screen and (min-width: 768px) {
+    /* line 61, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+    .opcover h1 .name span {
+        display: block;
+        font-size: 5.5625em;
+        line-height: 0.74157em; } }
+@media screen and (min-width: 1024px) {
+    /* line 61, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+    .opcover h1 .name span {
+        font-size: 10em;
+        line-height: 0.71875em; } }
+/* line 78, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+.opcover h1 .name span:last-child {
+    margin-left: 3px; }
+@media screen and (min-width: 768px) {
+    /* line 78, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+    .opcover h1 .name span:last-child {
+        margin-right: 0; } }
+/* line 93, /home/fabian/projects/143/source/stylesheets/modules/_home.scss */
+.opcover img {
     -webkit-transition: opacity 0.5s ease-out;
     -moz-transition: opacity 0.5s ease-out;
     transition: opacity 0.5s ease-out;
     z-index: 1;
     opacity: .5; }
-  @media screen and (min-width: 768px) {
-    /* line 49, /Users/administrator/sites/143/source/stylesheets/modules/_home.scss */
-    .opcover h1 {
-      top: 27px;
-      left: 30px;
-      font-size: 89px;
-      line-height: 66px;
-      width: 300px; } }
 
-/* line 2, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+/* line 2, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .session #session-header {
-  display: none;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  top: -73px;
-  position: fixed;
-  width: 100%;
-  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  height: 73px; }
-  /* line 12, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session #session-header.active {
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    top: -73px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    height: 73px; }
+/* line 12, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session #session-header.active {
     background: white;
     top: 0; }
-  /* line 17, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session #session-header .container {
+/* line 17, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session #session-header .container {
     position: relative; }
-  /* line 21, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session #session-header .logo {
+/* line 21, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session #session-header .logo {
     position: absolute;
     top: 3px; }
-  /* line 26, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session #session-header .track {
+/* line 26, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session #session-header .track {
     text-align: center;
     line-height: 70px; }
-    /* line 30, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .session #session-header .track strong {
-      font-size: 30px;
-      font-family: "GiorgioSansBold", sans-serif; }
-  /* line 36, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session #session-header .play {
+/* line 30, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session #session-header .track strong {
+    font-size: 30px;
+    font-family: "GiorgioSansBold", sans-serif; }
+/* line 36, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session #session-header .play {
     position: absolute;
     right: 30px;
     top: 20px; }
-  /* line 44, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session #session-header .previous,
-  .session #session-header .next {
+/* line 44, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session #session-header .previous,
+.session #session-header .next {
     margin: 0 23px;
     position: relative;
     top: -1px;
     font-size: 19px;
     color: #cccccc; }
-  @media screen and (min-width: 1024px) {
-    /* line 2, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+/* line 51, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session #session-header .previous:hover,
+.session #session-header .next:hover {
+    opacity: 0.6; }
+@media screen and (min-width: 1024px) {
+    /* line 2, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session #session-header {
-      display: block; } }
-/* line 58, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+        display: block; } }
+/* line 62, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .session .session-cover .img-holder {
-  margin: 0; }
-/* line 63, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+    margin: 0; }
+/* line 67, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .session .session-head {
-  background: black;
-  color: white;
-  text-align: center; }
-  /* line 68, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session .session-head .container {
+    background: black;
+    color: white;
+    text-align: center; }
+/* line 72, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head .container {
     position: relative; }
-  /* line 73, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session .session-head a {
+/* line 77, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head .inner-container {
+    padding-left: 113px; }
+/* line 80, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head .inner-container .social {
+    position: absolute;
+    left: 0;
+    top: 0; }
+@media screen and (min-width: 768px) {
+    /* line 80, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head .inner-container .social {
+        left: 20px;
+        top: 45px; } }
+@media screen and (min-width: 1024px) {
+    /* line 80, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head .inner-container .social {
+        left: 5px; } }
+/* line 94, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head .inner-container .social ul {
+    border-left: 0; }
+@media screen and (min-width: 768px) {
+    /* line 94, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head .inner-container .social ul {
+        border-left: 1px solid #474747; } }
+/* line 101, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head .inner-container .social ul li:last-child {
+    border-right: 0; }
+@media screen and (min-width: 768px) {
+    /* line 101, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head .inner-container .social ul li:last-child {
+        border-right: 1px solid #474747; } }
+/* line 113, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head .inner-container .play {
+    float: none;
+    text-align: center; }
+/* line 117, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head .inner-container .play .btn {
+    display: block;
+    width: auto; }
+/* line 126, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head a {
     color: white; }
-  /* line 77, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session .session-head h1 {
+/* line 130, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head h1 {
     font-family: "GiorgioSansBold", sans-serif;
-    font-size: 71px;
-    line-height: 66px;
-    float: left;
-    width: 100%;
-    margin-top: 24px;
+    margin-top: 65px;
     margin-bottom: 14px; }
-    /* line 86, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .session .session-head h1 span {
-      display: block;
-      font-size: 42px;
-      line-height: 24px; }
-  /* line 93, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session .session-head p {
+@media screen and (min-width: 768px) {
+    /* line 130, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head h1 {
+        margin-top: 24px; } }
+/* line 139, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head h1 .rank {
+    display: block;
+    font-size: 37px;
+    line-height: 100%; }
+@media screen and (min-width: 1024px) {
+    /* line 139, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head h1 .rank {
+        font-size: 55px;
+        line-height: 100%; } }
+/* line 152, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head h1 .name {
+    margin-top: -7px; }
+@media screen and (min-width: 1024px) {
+    /* line 152, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head h1 .name {
+        margin-top: -11px; } }
+/* line 159, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head h1 .name span {
+    display: inline-block;
+    line-height: 100%;
+    vertical-align: top;
+    display: block;
+    font-size: 89px;
+    line-height: 66px; }
+@media screen and (min-width: 1024px) {
+    /* line 159, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head h1 .name span {
+        font-size: 160px;
+        line-height: 115px; } }
+/* line 178, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head p {
     font-size: 16px;
     line-height: 23px; }
-  /* line 101, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session .session-head .social {
+@media screen and (min-width: 1024px) {
+    /* line 178, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head p {
+        font-size: 30px !important;
+        line-height: 42px !important;
+        margin-top: 50px;
+        display: block; } }
+/* line 193, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head .social {
     float: left; }
-  /* line 105, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session .session-head .session-intro {
+/* line 197, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head .session-intro {
     padding: 0 20px 10px;
     clear: both; }
-  /* line 110, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session .session-head .play {
+@media screen and (min-width: 768px) {
+    /* line 197, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head .session-intro {
+        padding: 0 50px 10px; } }
+/* line 206, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-head .play {
     text-align: left;
     float: right; }
-  @media screen and (max-width: 320px) {
-    /* line 118, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+@media screen and (max-width: 320px) {
+    /* line 214, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-head .play .btn {
-      width: 205px; } }
-  @media screen and (min-width: 768px) {
-    /* line 63, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+        width: 205px; } }
+@media screen and (min-width: 768px) {
+    /* line 67, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-head {
-      min-height: 324px; }
-      /* line 127, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-      .session .session-head h1 {
+        min-height: 324px; }
+    /* line 223, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head h1 {
         font-size: 89px;
         margin-bottom: 30px; }
-        /* line 131, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-        .session .session-head h1 span {
-          font-size: 51px;
-          line-height: 35px; }
-      /* line 137, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-      .session .session-head p {
+    /* line 227, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head h1 span {
+        font-size: 51px;
+        line-height: 35px; }
+    /* line 233, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head p {
         font-size: 21px;
         line-height: 30px; }
-      /* line 142, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-      .session .session-head .social, .session .session-head .play {
+    /* line 238, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head .social, .session .session-head .play {
         position: absolute;
         top: 45px; }
-      /* line 147, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-      .session .session-head .social {
+    /* line 243, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head .social {
         left: 20px;
         float: none; }
-      /* line 152, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-      .session .session-head .play {
-        right: 20px; } }
-  @media screen and (min-width: 1024px) {
-    /* line 162, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .session .session-head .social {
-      left: 5px; }
-    /* line 166, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+    /* line 248, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-head .play {
-      right: 5px; } }
-/* line 172, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+        right: 20px; } }
+@media screen and (min-width: 1024px) {
+    /* line 258, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head .social {
+        left: 5px; }
+    /* line 262, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-head .play {
+        right: 5px; } }
+/* line 268, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .session .session-info {
-  padding: 15px 0 12px;
-  text-align: center;
-  border-bottom: #e0e0e0 solid 1px;
-  min-height: 60px; }
-  /* line 178, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session .session-info ul {
+    padding: 15px 0 12px;
+    text-align: center;
+    border-bottom: #e0e0e0 solid 1px;
+    min-height: 60px; }
+/* line 274, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-info ul {
     font-size: 0; }
-  /* line 182, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session .session-info li {
+/* line 278, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-info li {
     display: inline-block;
     line-height: 23px;
     font-size: 14px;
@@ -658,268 +823,277 @@ header {
     padding: 0 14px;
     border-right: #cccccc solid 1px;
     vertical-align: middle; }
-    /* line 191, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .session .session-info li:last-child {
-      border: none; }
-  /* line 197, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session .session-info .social li {
+/* line 287, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-info li:last-child {
+    border: none; }
+/* line 294, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-info .social li {
     border: none;
     padding: 0 8px; }
-  /* line 202, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .session .session-info .social a {
-    color: #cccccc;
+/* line 298, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-info .social li:hover a {
+    opacity: 0.5; }
+/* line 303, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-info .social a {
+    color: #999999;
     font-size: 18px;
     position: relative;
     top: 4px; }
-    /* line 208, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .session .session-info .social a.fb {
-      top: 2px; }
-    /* line 212, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .session .session-info .social a.sc {
-      font-size: 27px; }
-  @media screen and (max-width: 320px) {
-    /* line 220, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+/* line 309, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-info .social a.fb {
+    top: 2px; }
+/* line 313, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.session .session-info .social a.sc {
+    font-size: 27px; }
+@media screen and (max-width: 320px) {
+    /* line 321, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-info li:first-child {
-      border: none; } }
-  @media screen and (min-width: 768px) {
-    /* line 172, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+        border: none; } }
+@media screen and (min-width: 768px) {
+    /* line 268, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-info {
-      margin-bottom: 40px;
-      padding: 12px 0; }
-      /* line 230, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-      .session .session-info ul {
+        margin-bottom: 40px;
+        padding: 12px 0; }
+    /* line 331, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-info ul {
         height: 31px; }
-      /* line 233, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-      .session .session-info li {
+    /* line 334, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .session .session-info li {
         font-size: 15px;
         border-right: #cccccc solid 1px;
         line-height: 31px; } }
-  @media screen and (min-width: 1024px) {
-    /* line 172, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+@media screen and (min-width: 1024px) {
+    /* line 268, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-info {
-      margin-bottom: 53px; } }
+        margin-bottom: 53px; } }
 
-/* line 247, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+/* line 348, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .post article {
-  padding-top: 20px; }
-  /* line 250, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .post article p {
+    padding-top: 20px; }
+/* line 351, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post article p {
     color: #6b6b6b;
     font-size: 14px;
     line-height: 21px;
     padding: 0 20px; }
-    /* line 256, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .post article p.q {
-      color: #111111;
-      margin: 0 auto; }
-    /* line 261, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .post article p.a {
-      margin: 0 0 21px; }
-  /* line 266, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .post article .sideleft, .post article .sideright {
+/* line 357, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post article p.q {
+    color: #111111;
+    margin: 0 auto; }
+/* line 362, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post article p.a {
+    margin: 0 0 21px; }
+/* line 367, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post article .sideleft, .post article .sideright {
     margin: 0 20px; }
-    /* line 269, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .post article .sideleft img, .post article .sideright img {
-      margin-bottom: 20px; }
-    /* line 273, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .post article .sideleft .caption, .post article .sideright .caption {
-      margin-bottom: 33px; }
-      /* line 276, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-      .post article .sideleft .caption h3, .post article .sideleft .caption p, .post article .sideright .caption h3, .post article .sideright .caption p {
-        font-size: 13px;
-        color: #999999;
-        margin: 0;
-        padding: 0; }
-  /* line 285, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .post article blockquote {
+/* line 370, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post article .sideleft img, .post article .sideright img {
+    margin-bottom: 20px; }
+/* line 374, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post article .sideleft .caption, .post article .sideright .caption {
+    margin-bottom: 33px; }
+/* line 377, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post article .sideleft .caption h3, .post article .sideleft .caption p, .post article .sideright .caption h3, .post article .sideright .caption p {
+    font-size: 13px;
+    color: #999999;
+    margin: 0;
+    padding: 0; }
+/* line 386, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post article blockquote {
     text-align: center;
     margin: 30px 15px; }
-    /* line 289, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .post article blockquote p {
-      font-size: 40px;
-      font-family: "GiorgioSansBold", sans-serif;
-      line-height: 40px;
-      width: auto;
-      color: #020202;
-      padding: 0;
-      margin-top: 10px;
-      margin-bottom: 15px; }
-    /* line 300, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .post article blockquote.bqleft {
-      line-height: 40px;
-      text-align: center; }
-  @media screen and (max-width: 320px) {
-    /* line 308, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+/* line 390, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post article blockquote p {
+    font-size: 40px;
+    font-family: "GiorgioSansBold", sans-serif;
+    line-height: 40px;
+    width: auto;
+    color: #020202;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 15px; }
+/* line 401, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post article blockquote.bqleft {
+    line-height: 40px;
+    text-align: center; }
+@media screen and (max-width: 320px) {
+    /* line 409, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article blockquote:before, .post article blockquote:after {
-      content: "";
-      border-top: black solid 2px;
-      display: block;
-      width: 30%;
-      margin: 0 auto; } }
-  @media screen and (min-width: 768px) {
-    /* line 247, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+        content: "";
+        border-top: black solid 2px;
+        display: block;
+        width: 30%;
+        margin: 0 auto; } }
+@media screen and (min-width: 768px) {
+    /* line 348, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article {
-      padding-top: 0; }
-      /* line 321, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-      .post article p {
-        font-size: 15px;
-        line-height: 22px; }
-        /* line 325, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-        .post article p.q {
-          color: #111111;
-          margin: 0;
-          width: 71%; }
-        /* line 331, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-        .post article p.a {
-          margin: 0 0 22px;
-          width: 71%; }
-      /* line 337, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-      .post article .sideleft, .post article .sideright {
+        padding-top: 0; }
+    /* line 422, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post article p {
+        font-size: 16px;
+        line-height: 1.4375em; }
+    /* line 426, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post article p.q {
+        color: #111111;
+        margin: 0;
+        width: 71%; }
+    /* line 432, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post article p.a {
+        margin: 0 0 22px;
+        width: 71%; }
+    /* line 438, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post article .sideleft, .post article .sideright {
         width: 190px;
         margin-top: 5px; }
-      /* line 342, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-      .post article blockquote {
-        margin: 50px 25px; }
-        /* line 345, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-        .post article blockquote p {
-          font-size: 80px;
-          line-height: 65px;
-          margin: 40px 0 50px; }
-        /* line 351, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-        .post article blockquote.bqleft {
-          float: right;
-          width: 190px;
-          text-align: left;
-          margin: 0 20px; }
-          /* line 357, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-          .post article blockquote.bqleft p {
-            font-size: 34px;
-            line-height: 31px; } }
-  @media screen and (min-width: 1024px) {
-    /* line 367, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .post article p.q {
-      width: 535px;
-      margin: 0 auto; }
-    /* line 372, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .post article p.a {
-      width: 535px;
-      margin: 0 auto 22px; }
-    /* line 378, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .post article .sideleft, .post article .sideright {
-      margin-left: 5px;
-      margin-right: 5px; }
-    /* line 383, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+    /* line 443, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article blockquote {
-      margin: 40px 70px; }
-      /* line 386, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-      .post article blockquote.bqleft {
+        margin: 50px 25px; }
+    /* line 446, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post article blockquote p {
+        font-size: 80px;
+        line-height: 65px;
+        margin: 40px 0 50px; }
+    /* line 452, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post article blockquote.bqleft {
+        float: right;
+        width: 190px;
+        text-align: left;
+        margin: 0 20px; }
+    /* line 458, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post article blockquote.bqleft p {
+        font-size: 34px;
+        line-height: 1.05882em;
+        margin-top: 0; } }
+@media screen and (min-width: 1024px) {
+    /* line 469, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post article p.q {
+        width: 535px;
+        margin: 0 auto; }
+    /* line 474, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post article p.a {
+        width: 535px;
+        margin: 0 auto 22px; }
+    /* line 480, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post article .sideleft, .post article .sideright {
+        margin-left: 5px;
+        margin-right: 5px; }
+    /* line 485, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post article blockquote {
+        margin: 40px 70px; }
+    /* line 488, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post article blockquote.bqleft {
         float: left;
         width: 340px;
         font-size: 44px;
         line-height: 40px;
         margin: 0 30px; } }
-  @media screen and (min-width: 1280px) {
-    /* line 398, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+@media screen and (min-width: 1280px) {
+    /* line 500, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article p.q {
-      width: 640px; }
-    /* line 402, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+        width: 640px; }
+    /* line 504, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article p.a {
-      width: 640px; }
-    /* line 407, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+        width: 640px; }
+    /* line 509, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article .sideleft, .post article .sideright {
-      width: 225px; }
-    /* line 411, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+        width: 225px; }
+    /* line 513, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article blockquote {
-      margin: 40px 120px; } }
-/* line 417, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+        margin: 40px 120px; } }
+/* line 519, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .post .post-foot {
-  padding: 0 20px; }
-  /* line 420, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .post .post-foot .social.square {
+    padding: 0 20px; }
+/* line 522, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post .post-foot .social.square {
     margin: 37px 0 63px; }
-    /* line 423, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .post .post-foot .social.square ul, .post .post-foot .social.square li {
-      border-color: #e2e2e2; }
-    /* line 427, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-    .post .post-foot .social.square a {
-      color: #e2e2e2; }
-/* line 433, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+/* line 525, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post .post-foot .social.square ul, .post .post-foot .social.square li {
+    border-color: #e2e2e2; }
+/* line 529, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post .post-foot .social.square a {
+    color: #e2e2e2; }
+/* line 535, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .post .reference {
-  border-top: #cccccc solid 1px;
-  color: #9d9e9e;
-  padding: 25px 0 48px; }
-  /* line 438, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .post .reference h2 {
+    border-top: #cccccc solid 1px;
+    color: #9d9e9e;
+    padding: 25px 0 48px; }
+/* line 540, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post .reference h2 {
     font-size: 18px;
     margin-bottom: 20px; }
-  /* line 443, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .post .reference ul {
+/* line 545, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post .reference ul {
     font-size: 0; }
-  /* line 447, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .post .reference li {
+/* line 549, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post .reference li {
     margin-bottom: 5px;
     font-size: 15px; }
-  /* line 452, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .post .reference a {
+/* line 554, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post .reference a {
     font-size: 15px;
     color: #999999;
-    text-decoration: underline; }
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 1px solid #999999; }
+/* line 561, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+.post .reference a:hover {
+    opacity: .6; }
 @media screen and (min-width: 768px) {
-  /* line 460, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .post .post-foot {
-    width: 71%;
-    margin: 0; }
-    /* line 464, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+    /* line 569, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post .post-foot {
+        width: 71%;
+        margin: 0; }
+    /* line 573, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post .post-foot .social.square {
-      margin: 45px 0 90px; }
-  /* line 469, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .post .reference {
-    padding: 25px 0 70px; }
-    /* line 472, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+        margin: 45px 0 90px; }
+    /* line 578, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post .reference {
+        padding: 25px 0 70px; }
+    /* line 581, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post .reference li {
-      width: 50%;
-      display: inline-block; } }
+        width: 50%;
+        display: inline-block; } }
 @media screen and (min-width: 1024px) {
-  /* line 480, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .post .post-foot {
-    width: 550px;
-    margin: 0 auto; } }
+    /* line 589, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post .post-foot {
+        width: 550px;
+        margin: 0 auto; } }
 @media screen and (min-width: 1024px) {
-  /* line 487, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .post .post-foot {
-    width: 640px; } }
+    /* line 596, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .post .post-foot {
+        width: 640px; } }
 
-/* line 494, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+/* line 603, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .related ul {
-  overflow: hidden; }
-/* line 502, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+    overflow: hidden; }
+/* line 611, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .related a h1 {
-  width: 120px;
-  top: 12px;
-  left: 15px; }
-/* line 508, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
+    width: 120px;
+    top: 12px;
+    left: 15px; }
+/* line 617, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .related a h1, .related a span {
-  font-size: 37px;
-  line-height: 28px; }
+    font-size: 37px;
+    line-height: 28px; }
 @media screen and (min-width: 768px) {
-  /* line 515, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .related li {
-    width: 50%;
-    float: left; }
-  /* line 521, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .related a h1 {
-    width: 145px;
-    top: 20px;
-    left: 25px; }
-  /* line 527, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .related a h1, .related a span {
-    font-size: 44px;
-    line-height: 33px; } }
+    /* line 624, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .related li {
+        width: 50%;
+        float: left; }
+    /* line 630, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .related a h1 {
+        width: 145px;
+        top: 20px;
+        left: 25px; }
+    /* line 636, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .related a h1, .related a span {
+        font-size: 44px;
+        line-height: 33px; } }
 @media screen and (min-width: 1024px) {
-  /* line 536, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .related a h1 {
-    width: 200px; }
-  /* line 540, /Users/administrator/sites/143/source/stylesheets/modules/_session.scss */
-  .related a h1, .related a span {
-    font-size: 60px;
-    line-height: 45px; } }
+    /* line 645, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .related a h1 {
+        width: 200px; }
+    /* line 649, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
+    .related a h1, .related a span {
+        font-size: 60px;
+        line-height: 45px; } }

@@ -5,7 +5,14 @@
 				<a href="/">143</a>
 			</div>
 			<div class="track">
-				<a class="previous" href=""><i class="icon-arrow-left"></i></a><strong>#<?php the_field('session_number'); ?> <?php the_title(); ?></strong><a class="next" href=""><i class="icon-arrow-right"></i></a>
+			<?php $previous_post = get_previous_post();
+				if (!empty( $previous_post )): ?>
+				<a class="previous" href="<?php echo get_permalink( $previous_post->ID ); ?>"><i class="icon-arrow-left"></i></a><strong>#<?php the_field('session_number'); ?> <?php the_title(); ?></strong>
+				<?php endif; ?>
+				<?php $next_post = get_next_post();
+				if (!empty( $next_post )): ?>
+					<a class="next" href="<?php echo get_permalink( $next_post->ID ); ?>"><i class="icon-arrow-right"></i></a>
+				<?php endif; ?>
 			</div>
 			<div class="play">
 				<a class="btn btn-small" href=""><i class="icon-play"></i><span>PLAY DJ SESSION</span></a>
@@ -19,22 +26,29 @@
       </div>
       <div class="session-head">
 	      <div class="container">
-	        <div class="social square">
-		      <ul>
-			      <li>
-				      <a href=""><i class="icon-facebook"></i></a>
-			      </li>
-			      <li>
-				      <a href=""><i class="icon-twitter"></i></a>
-			      </li>
-		      </ul>
-	      </div>
+		      <div class="inner-container">
+		        <div class="social square">
+			      <ul>
+				      <li class="facebook">
+					      <a href=""><i class="icon-facebook"></i></a>
+				      </li>
+				      <li class="twitter">
+					      <a href=""><i class="icon-twitter"></i></a>
+				      </li>
+			      </ul>
+		        </div>
+	        </div>
 	        <div class="play">
 		      <a class="btn" href=""><i class="icon-play"></i><span>PLAY DJ SESSION</span></a>
 	      </div>
 		    <div class="session-intro">
           <h1>
-            <span>Nº<?php the_field('session_number'); ?></span> <?php the_title(); ?>
+	          <div class="rank">
+		          Nº<?php the_field('session_number'); ?>
+	          </div>
+	          <div class="name">
+		          <span><?php the_title(); ?></span>
+	          </div>
           </h1>
           <p>
 	          <?php the_field('session_description'); ?>
