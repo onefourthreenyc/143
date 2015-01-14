@@ -11,7 +11,7 @@
 				<?php endif; ?>
 				<?php $next_post = get_next_post();
 				if (!empty( $next_post )): ?>
-					<a class="next" href="<?php echo get_permalink( $next_post->ID ); ?>"><i class="icon-arrow-right"></i></a>
+					<a class="next" href="<?php echo get_permalink( $next_post->ID ); ?>"><i class="icon-arrow-right"></i></a><strong>#<?php the_field('session_number'); ?> <?php the_title(); ?></strong>
 				<?php endif; ?>
 			</div>
 			<div class="play">
