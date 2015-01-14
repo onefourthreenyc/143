@@ -7,11 +7,12 @@
 			<div class="track">
 			<?php $previous_post = get_previous_post();
 				if (!empty( $previous_post )): ?>
-				<a class="previous" href="<?php echo get_permalink( $previous_post->ID ); ?>"><i class="icon-arrow-left"></i></a><strong>#<?php the_field('session_number'); ?> <?php the_title(); ?></strong>
+				<a class="previous" href="<?php echo get_permalink( $previous_post->ID ); ?>"><i class="icon-arrow-left"></i></a>
 				<?php endif; ?>
+				<strong>#<?php the_field('session_number'); ?> <?php the_title(); ?></strong>
 				<?php $next_post = get_next_post();
 				if (!empty( $next_post )): ?>
-					<a class="next" href="<?php echo get_permalink( $next_post->ID ); ?>"><i class="icon-arrow-right"></i></a><strong>#<?php the_field('session_number'); ?> <?php the_title(); ?></strong>
+					<a class="next" href="<?php echo get_permalink( $next_post->ID ); ?>"><i class="icon-arrow-right"></i></a>
 				<?php endif; ?>
 			</div>
 			<div class="play">
