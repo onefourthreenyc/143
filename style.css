@@ -238,6 +238,11 @@ blockquote p {
 /* line 144, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .box-list a:hover {
     opacity: .6; }
+.box-list span {
+    color: #6b6b6b;
+    font-size: 15px;
+    padding-bottom: 5px;
+    display: inline-block; }
 @media screen and (min-width: 768px) {
     /* line 122, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
     .box-list {
