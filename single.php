@@ -101,7 +101,9 @@
 	          <?php if( have_rows('roll_calls')): ?>
 		          <?php while ( have_rows('roll_calls') ) : the_row(); ?>
 			          <li>
-				          <a href="<?php echo the_sub_field("link"); ?>"><?php echo the_sub_field("name"); ?></a>
+						<?php if(get_sub_field("link")): ?><a href="<?php echo the_sub_field("link"); ?>"><?php endif; ?>
+					          <?php echo the_sub_field("name"); ?>
+						<?php if(get_sub_field("link")): ?></a><?php endif; ?>
 			          </li>
 		          <?php endwhile ?>
 	          <?php endif ?>
