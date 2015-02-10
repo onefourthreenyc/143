@@ -55,30 +55,44 @@ Template Name: About
 				<li>
 					<div class="team-member">
 						<h2>
-							Tom Royer
+							Chris Searpoint
 						</h2>
 						<div class="team-member-position">
-							Director
+							Producer
 						</div>
 					</div>
 					<div class="team-info">
 						<p>
-							Guillermo is a design maniac from Barcelona. He has a multidisciplinary background, switching between book design, web design, environmental graphics, visual identity and poster design. rrently works as an art director for Area 17. He can't design without listening.
 						</p>
 					</div>
 				</li>
 				<li>
 					<div class="team-member">
 						<h2>
-							Tom Royer
+							Selomé Samuel
 						</h2>
 						<div class="team-member-position">
-							Director
+							Director of Communication
 						</div>
 					</div>
 					<div class="team-info">
 						<p>
-							Guillermo is a design maniac from Barcelona. He has a multidisciplinary background, switching between book design, web design, environmental graphics, visual identity and poster design. rrently works as an art director for Area 17. He can't design without listening.
+
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="team-member">
+						<h2>
+							Timothée Chambovet & Charles Roussel
+						</h2>
+						<div class="team-member-position">
+							Photographers
+						</div>
+					</div>
+					<div class="team-info">
+						<p>
+
 						</p>
 					</div>
 				</li>
