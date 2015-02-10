@@ -20,3 +20,8 @@ function onefourthree_scripts() {
 	wp_enqueue_script( 'html5shim', get_template_directory_uri() . '/javascripts/vendor/html5shim.js', array( 'jquery' ), '6.0', true );
 }
 
+// Add SoundCloud oEmbed
+function add_oembed_soundcloud(){
+	wp_oembed_add_provider( 'http://soundcloud.com/*', 'http://soundcloud.com/oembed' );
+}
+add_action('init','add_oembed_soundcloud');

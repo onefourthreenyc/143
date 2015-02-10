@@ -54,6 +54,9 @@
           <p>
 	          <?php the_field('session_description'); ?>
           </p>
+			<p>
+	          <iframe width="500" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<?php the_field('soundcloud_embed'); ?>?secret_token=<?php the_field('soundcloud_secret_token'); ?>&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+          </p>
         </div>
 	      </div>
       </div>
@@ -91,7 +94,7 @@
         </ul>
       </div>
     </section>
-    <section class="post">
+	<section class="post">
         <div class="container">
         <div class="box-list">
           <h2>
