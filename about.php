@@ -72,7 +72,7 @@ Template Name: About
 							Selomé Samuel
 						</h2>
 						<div class="team-member-position">
-							Director of Communication
+							Editorial Director
 						</div>
 					</div>
 					<div class="team-info">
