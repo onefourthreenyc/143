@@ -84,6 +84,16 @@ Template Name: About
 						</p>
 					</div>
 				</li>
+				<li>
+					<div class="team-member">
+						<h2>
+							Special Thanks
+						</h2>
+					</div>
+					<div class="team-info">
+						<p>Roman Duvi, Sabrina Tamar</p>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</section>
