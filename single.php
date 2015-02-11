@@ -15,9 +15,9 @@
 					<a class="next" href="<?php echo get_permalink( $next_post->ID ); ?>"><i class="icon-arrow-right"></i></a>
 				<?php endif; ?>
 			</div>
-			<div class="play">
+			<!--<div class="play">
 				<a class="btn btn-small" href=""><i class="icon-play"></i><span>PLAY DJ SESSION</span></a>
-			</div>
+			</div>-->
 		</div>
 	</div>
     <div class="parallax-image"></div>
@@ -39,9 +39,9 @@
 			      </ul>
 		        </div>
 	        </div>
-	        <div class="play">
+	      <!--  <div class="play">
 		      <a class="btn" href=""><i class="icon-play"></i><span>PLAY DJ SESSION</span></a>
-	      </div>
+	      </div> -->
 		    <div class="session-intro">
           <h1>
 	          <div class="rank">
