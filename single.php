@@ -148,7 +148,7 @@
 		        <?php while ( have_rows('qa') ) : the_row(); ?>
 			        <p class="q"><?php echo the_sub_field('question'); ?></p>
 			        <p class="a"><?php echo the_sub_field('answer'); ?></p>
-			        <?php if(!empty($qa_counter) && $qa_counter %5 == 0): ?>
+			        <?php if(!empty($qa_counter) && $qa_counter %4 == 0): ?>
 				        <?php if(!empty($captions) && array_key_exists($caption_counter, $captions)): ?>
 					        <div class="sideright">
 						        <img src="<?php echo $captions[$caption_counter]['image']; ?>" />

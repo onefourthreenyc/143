@@ -55,7 +55,7 @@ Template Name: About
 				<li>
 					<div class="team-member">
 						<h2>
-							Chris Spearpoint
+							Christopher Spearpoint
 						</h2>
 						<div class="team-member-position">
 							Executive Producer
