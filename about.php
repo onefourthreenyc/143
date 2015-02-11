@@ -48,14 +48,14 @@ Template Name: About
 					</div>
 					<div class="team-info">
 						<p>
-							Guillermo is a design maniac from Barcelona. He has a multidisciplinary background, switching between book design, web design, environmental graphics, visual identity and poster design. rrently works as an art director for Area 17. He can't design without listening.
+							Guillermo is a design maniac from Barcelona. He has a multidisciplinary background, switching between book design, web design, environmental graphics, visual identity and poster design. Currently works as an art director for Area 17. He can't design without listening.
 						</p>
 					</div>
 				</li>
 				<li>
 					<div class="team-member">
 						<h2>
-							Chris Searpoint
+							Chris Spearpoint
 						</h2>
 						<div class="team-member-position">
 							Producer
@@ -77,7 +77,7 @@ Template Name: About
 					</div>
 					<div class="team-info">
 						<p>
-
+							Obsessed with music since digging through her mother’s jazz records as a child, Selomé took a detour to study photography in college, but has always been interested in telling stories. A lifetime of making mixtapes for friends grew into the electronic blog Dipped in Dollars and then into creating custom playlists for brands. She now oversees all content for Converse Rubber Tracks, a recording studio in Brooklyn.
 						</p>
 					</div>
 				</li>
