@@ -38,7 +38,7 @@
             mediaWidth: 1500,
             mediaHeight: 1000,
             parallax: true,
-            touch: false
+            touch: true
         },
         ImageScrollModernizr = {},
         docElement = document.documentElement,
