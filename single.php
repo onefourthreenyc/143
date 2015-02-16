@@ -31,10 +31,10 @@
 		        <div class="social square">
 			      <ul>
 				      <li class="facebook">
-					      <a href=""><i class="icon-facebook"></i></a>
+					      <a href="http://www.facebook.com/sharer.php?u=<?php echo get_permalink( $post->ID ); ?>"><i class="icon-facebook"></i></a>
 				      </li>
 				      <li class="twitter">
-					      <a href=""><i class="icon-twitter"></i></a>
+					      <a href="https://twitter.com/home?status=<?php echo get_permalink( $post->ID ); ?>"><i class="icon-twitter"></i></a>
 				      </li>
 			      </ul>
 		        </div>
@@ -182,10 +182,10 @@
           <div class="social square">
             <ul>
               <li>
-                <a href=""><i class="icon-facebook"></i></a>
+                <a href="http://www.facebook.com/sharer.php?u=<?php echo get_permalink( $post->ID ); ?>"><i class="icon-facebook"></i></a>
               </li>
               <li>
-                <a href=""><i class="icon-twitter"></i></a>
+                <a href="https://twitter.com/home?status=<?php echo get_permalink( $post->ID ); ?>"><i class="icon-twitter"></i></a>
               </li>
             </ul>
           </div>
