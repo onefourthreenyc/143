@@ -171,7 +171,7 @@
 			        <?php endif; ?>
 			        <?php if(!empty($qa_counter) && $qa_counter %4 == 0): ?>
 						<?php if(!empty($images) && array_key_exists($images_counter, $images)): ?>
-					        <div class="img-holder" data-image="<?php echo $images[$images_counter]; ?>"></div>
+					        <div class="img-holder" data-image="<?php echo $images[$images_counter]; ?>" data-image-mobile="<?php echo $images[$images_counter]; ?>"></div>
 				        <?php endif; ?>
 				        <?php $images_counter++; ?>
 			        <?php endif; ?>
