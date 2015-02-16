@@ -28,13 +28,13 @@
 		    <div class="social">
 			    <ul>
 				    <li>
-					    <a href=""><i class="icon-facebook"></i></a>
+					    <a href="https://facebook.com/onefourthreenyc"><i class="icon-facebook"></i></a>
 				    </li>
 				    <li>
-					    <a href=""><i class="icon-twitter"></i></a>
+					    <a href="https://twitter.com/onefourthreenyc"><i class="icon-twitter"></i></a>
 				    </li>
 				    <li>
-					    <a href=""><i class="icon-instagram"></i></a>
+					    <a href="http://instagram.com/onefourthreenyc"><i class="icon-instagram"></i></a>
 				    </li>
 			    </ul>
 		    </div>
