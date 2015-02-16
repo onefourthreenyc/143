@@ -160,7 +160,7 @@
 				        <?php endif; ?>
 				        <?php $caption_counter++; ?>
 			        <?php endif; ?>
-			        <?php if(!empty($qa_counter) && $qa_counter %9 == 0): ?>
+			        <?php if(!empty($qa_counter) && $qa_counter %5 == 0): ?>
 				        <?php if(!empty($blockquotes) && array_key_exists($blockquotes_counter, $blockquotes)): ?>
 					        <blockquote  <?php if($blockquotes_counter %2 == 0): ?>class="bqleft" <?php endif; ?>>
 						        <p><?php echo $blockquotes[$blockquotes_counter]; ?></p>
