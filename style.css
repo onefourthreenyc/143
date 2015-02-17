@@ -243,6 +243,33 @@ blockquote p {
     font-size: 15px;
     padding-bottom: 5px;
     display: inline-block; }
+.box-list-photo {
+    background: #ededed;
+    padding: 22px 0 25px;
+    text-align: center; }
+/* line 127, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.box-list-photo h2 {
+    font-size: 18px;
+    color: #6b6b6b;
+    margin-bottom: 12px; }
+/* line 133, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.box-list-photo li {
+    margin-bottom: 5px; }
+/* line 137, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.box-list-photo a {
+    color: #6b6b6b;
+    font-size: 14px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border-bottom: 1px solid #6b6b6b; }
+/* line 144, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
+.box-list-photo a:hover {
+    opacity: .6; }
+.box-list-photo span {
+    color: #6b6b6b;
+    font-size: 14px;
+    padding-bottom: 5px;
+    display: inline-block; }
 @media screen and (min-width: 768px) {
     /* line 122, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
     .box-list {
@@ -252,17 +279,34 @@ blockquote p {
         margin-left: 5px;
         margin-top: 3px;
         text-align: left;
-        margin-right: 20px; } }
+        margin-right: 20px; }
+    .box-list-photo {
+        width: 190px;
+        float: right;
+        padding: 25px;
+        margin-left: 5px;
+        margin-top: 300px;
+        text-align: left;
+        margin-right: -195px; }
+}
 @media screen and (min-width: 1024px) {
     /* line 122, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
     .box-list {
         float: left;
-        margin-left: 5px; } }
+        margin-left: 5px; }
+    .box-list-photo {
+        float: left;
+        margin-left: 5px; }
+}
 @media screen and (min-width: 1280px) {
     /* line 122, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
     .box-list {
         width: 230px;
-        margin: 3px 0 0; } }
+        margin: 3px 0 0; }
+    .box-list-photo {
+        width: 230px;
+        margin: 300px -230px 0; }
+}
 
 @media screen and (min-width: 768px) {
     /* line 171, /home/fabian/projects/143/source/stylesheets/base/_global.scss */

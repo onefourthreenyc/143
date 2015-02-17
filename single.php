@@ -121,6 +121,30 @@
 	          <?php endif ?>
           </ul>
         </div>
+        <div class="box-list-photo">
+	        <h2>
+		        PHOTOGRAPHY
+	        </h2>
+	        <ul>
+		        <?php if( have_rows('photographers')): ?>
+			        <?php while ( have_rows('photographers') ) : the_row(); ?>
+				        <li>
+					        <?php if(get_sub_field("link")): ?>
+					        <a href="<?php echo the_sub_field("link"); ?>">
+						        <?php else: ?>
+						        <span>
+					<?php endif; ?>
+					<?php echo the_sub_field("name"); ?>
+					<?php if(get_sub_field("link")): ?>
+					        </a>
+				        <?php else: ?>
+					        </span>
+				        <?php endif; ?>
+				        </li>
+			        <?php endwhile ?>
+		        <?php endif ?>
+	        </ul>
+        </div>
         <article>
 	        <?php if( have_rows('session_images')): ?>
 		        <?php while ( have_rows('session_images') ) : the_row(); ?>
