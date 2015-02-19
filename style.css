@@ -296,7 +296,7 @@ blockquote p {
         margin-left: 5px; }
     .box-list-photo {
         float: left;
-        margin-left: 5px; }
+        margin: 300px -210px 0; }
 }
 @media screen and (min-width: 1280px) {
     /* line 122, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
