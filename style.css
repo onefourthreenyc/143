@@ -993,7 +993,7 @@ header .social a {
     /* line 438, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article .sideleft, .post article .sideright {
         width: 190px;
-        margin-top: 5px; }
+        margin-top: -50px; }
     /* line 443, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article blockquote {
         margin: 50px 25px; }
