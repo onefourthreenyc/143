@@ -1146,3 +1146,5 @@ header .social a {
     .related a h1, .related a span {
         font-size: 60px;
         line-height: 45px; } }
+
+.mc4wp-form input[name="_mc4wp_required_but_not_really"] { display: none; }
