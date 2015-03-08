@@ -354,6 +354,9 @@ footer a.link:hover {
 footer .copy {
     float: left;
     font-size: 0.75em; }
+footer .copy a{
+    color: #DDD;
+     }
 /* line 31, /home/fabian/projects/143/source/stylesheets/partials/_footer.scss */
 footer .by {
     display: none;
