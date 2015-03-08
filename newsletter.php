@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: About
+Template Name: Newsletter
 */
 ?>
 <?php get_header(); ?>
