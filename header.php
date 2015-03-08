@@ -11,6 +11,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 	<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+	  <meta name="google-site-verification" content="m648XKv22ZZ8RkySQ2_qTNI65OggVohM4ToaVJeX_iE" />
     <title>143 | <?php if( is_front_page() ) { echo 'Home'; } else { echo get_the_title(); } ?></title>
     <link rel="stylesheet" media="screen" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
   <!--[if lt IE 9]>
