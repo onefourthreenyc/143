@@ -1,7 +1,7 @@
 	<footer>
 		<div class="new-container">
 			<div class="copy">
-				Copyright 143
+				Copyright 143 | <a href="/newsletter">Suscribe to Newsletter</a>
 			</div>
 			<div class="social">
 				<ul>
