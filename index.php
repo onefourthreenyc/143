@@ -9,7 +9,7 @@
 		            </div>
 		            <div class="name">
 			            <span>
-				            <?php the_title(); ?>
+				            <?php strtoupper(the_title()); ?>
 			            </span>
 		            </div>
 	            </h1>
