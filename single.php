@@ -31,10 +31,10 @@
 		        <div class="social square">
 			      <ul>
 				      <li class="facebook">
-					      <a href="http://www.facebook.com/sharer.php?u=<?php echo get_permalink( $post->ID ); ?>"><i class="icon-facebook"></i></a>
+					      <a href="http://www.facebook.com/sharer.php?u=<?php echo get_permalink( $post->ID ); ?>" target="_blank"><i class="icon-facebook"></i></a>
 				      </li>
 				      <li class="twitter">
-					      <a href="https://twitter.com/home?status=<?php echo get_permalink( $post->ID ); ?>"><i class="icon-twitter"></i></a>
+					      <a href="https://twitter.com/home?status=<?php echo get_permalink( $post->ID ); ?>" target="_blank"><i class="icon-twitter"></i></a>
 				      </li>
 			      </ul>
 		        </div>
@@ -76,17 +76,17 @@
               <ul>
 				<?php if(get_field('soundcloud_link')): ?>
 	                <li>
-	                  <a class="sc" href="<?php the_field('soundcloud_link') ?>"><i class="icon-soundcloud"></i></a>
+	                  <a class="sc" href="<?php the_field('soundcloud_link') ?>" target="_blank"><i class="icon-soundcloud"></i></a>
 	                </li>
 				<?php endif; ?>
 				<?php if(get_field('facebook_link')): ?>
 	                <li>
-	                  <a class="fb" href="<?php the_field('facebook_link') ?>"><i class="icon-facebook"></i></a>
+	                  <a class="fb" href="<?php the_field('facebook_link') ?>" target="_blank"><i class="icon-facebook"></i></a>
 	                </li>
 				<?php endif; ?>
 				<?php if(get_field('twitter_link')): ?>
 	                <li>
-	                  <a class="tw" href="<?php the_field('twitter_link') ?>"><i class="icon-twitter"></i></a>
+	                  <a class="tw" href="<?php the_field('twitter_link') ?>" target="_blank"><i class="icon-twitter"></i></a>
 	                </li>
 				<?php endif; ?>
               </ul>
@@ -106,7 +106,7 @@
 		          <?php while ( have_rows('roll_calls') ) : the_row(); ?>
 			          <li>
 						<?php if(get_sub_field("link")): ?>
-				          <a href="<?php echo the_sub_field("link"); ?>">
+				          <a href="<?php echo the_sub_field("link"); ?>" target="_blank">
 						<?php else: ?>
 							<span>
 						<?php endif; ?>
@@ -130,7 +130,7 @@
 			        <?php while ( have_rows('photographers') ) : the_row(); ?>
 				        <li>
 					        <?php if(get_sub_field("link")): ?>
-					        <a href="<?php echo the_sub_field("link"); ?>">
+					        <a href="<?php echo the_sub_field("link"); ?>" target="_blank">
 						        <?php else: ?>
 						        <span>
 					<?php endif; ?>
@@ -221,7 +221,7 @@
 	            <?php if( have_rows('reference')): ?>
 		            <?php while ( have_rows('reference') ) : the_row(); ?>
 			            <li>
-				            <a href="<?php echo the_sub_field("reference_url"); ?>"><?php echo the_sub_field("reference_title"); ?></a>
+				            <a href="<?php echo the_sub_field("reference_url"); ?>" target="_blank"><?php echo the_sub_field("reference_title"); ?></a>
 			            </li>
 		            <?php endwhile ?>
 	            <?php endif ?>
