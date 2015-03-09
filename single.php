@@ -9,7 +9,7 @@
 				if (!empty( $previous_post )): ?>
 				<a class="previous" href="<?php echo get_permalink( $previous_post->ID ); ?>"><i class="icon-arrow-left"></i></a>
 				<?php endif; ?>
-				<strong>#<?php the_field('session_number'); ?> <?php the_title(); ?></strong>
+				<strong>Nº<?php the_field('session_number'); ?> <?php the_title(); ?></strong>
 				<?php $next_post = get_next_post();
 				if (!empty( $next_post )): ?>
 					<a class="next" href="<?php echo get_permalink( $next_post->ID ); ?>"><i class="icon-arrow-right"></i></a>
@@ -231,13 +231,13 @@
         </div>
         <div class="related">
           <ul>
-			<?php query_posts('orderby=rand&showposts=2'); ?>
+			<?php query_posts(array('post__not_in' => array($post->ID), 'posts_per_page' => 2, 'orderby' => 'rand')); ?>
 				<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
 						<li class="opcover">
 							<a href="<?php echo get_permalink(); ?>">
 								<h1>
-									<span>Nº<?php the_field('session_number'); ?></span> <?php the_title(); ?>
+									<span>Nº<?php the_field('session_number'); ?><br /></span> <?php the_title(); ?>
 								</h1>
 								<img src="<?php the_field('non_featured_image'); ?>" />
 							</a>

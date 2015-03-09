@@ -185,13 +185,13 @@ img {
     background: #3b5998; }
 /* line 78, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .social.square li.facebook:hover a i {
-    color: #344f87; }
+    color: #FFF; }
 /* line 84, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .social.square li.twitter:hover a {
     background: #33ccfe; }
 /* line 87, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .social.square li.twitter:hover a i {
-    color: #2db5e1; }
+    color: #FFF; }
 /* line 92, /home/fabian/projects/143/source/stylesheets/base/_global.scss */
 .social.square li a {
     width: 56px;
@@ -499,7 +499,7 @@ header .social a {
 /* line 58, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
 .team li {
     border-top: #d0d0d0 solid 1px;
-    color: #989898;
+    color: #6b6b6b;
     padding: 10px 0 25px;
     overflow: hidden; }
 /* line 64, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
@@ -518,6 +518,10 @@ header .social a {
 /* line 81, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
 .team .team-member {
     padding: 20px 0 10px; }
+.team .team-member a {
+    color: black;
+    text-decoration: none;
+}
 /* line 87, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
 .team .team-info p {
     line-height: 25px;
@@ -544,11 +548,10 @@ header .social a {
         padding: 28px 0; }
     /* line 120, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
     .team .team-info {
-        min-height: 207px;
         padding: 18px 26px; }
     /* line 124, /home/fabian/projects/143/source/stylesheets/modules/_about.scss */
     .team .team-info p {
-        font-size: 0.9375em; } }
+        font-size: 16px; } }
 
 /* line 1, /home/fabian/projects/143/source/stylesheets/modules/_containers.scss */
 .container-page {
@@ -800,8 +803,8 @@ header .social a {
 @media screen and (min-width: 1024px) {
     /* line 178, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .session .session-head p {
-        font-size: 30px !important;
-        line-height: 42px !important;
+        font-size: 36px !important;
+        line-height: 46px !important;
         margin-top: 50px;
         display: block; } }
 /* line 193, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
@@ -983,7 +986,7 @@ header .social a {
     /* line 422, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article p {
         font-size: 16px;
-        line-height: 1.4375em; }
+        line-height: 25px; }
     /* line 426, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article p.q {
         color: #111111;
@@ -1013,7 +1016,7 @@ header .social a {
         margin: 0 20px; }
     /* line 458, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .post article blockquote.bqleft p {
-        font-size: 34px;
+        font-size: 36px;
         line-height: 1.05882em;
         margin-top: 0; } }
 @media screen and (min-width: 1024px) {
@@ -1064,6 +1067,9 @@ header .social a {
 /* line 529, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .post .post-foot .social.square a {
     color: #e2e2e2; }
+
+.post .post-foot .social.square:hover  a {
+    color: #000; }
 /* line 535, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
 .post .reference {
     border-top: #cccccc solid 1px;
@@ -1144,7 +1150,7 @@ header .social a {
 @media screen and (min-width: 1024px) {
     /* line 645, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .related a h1 {
-        width: 200px; }
+        width: 246px; }
     /* line 649, /home/fabian/projects/143/source/stylesheets/modules/_session.scss */
     .related a h1, .related a span {
         font-size: 60px;
