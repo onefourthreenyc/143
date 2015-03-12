@@ -30,7 +30,7 @@ Template Name: About
 					</div>
 					<div class="team-info">
 						<p>Originally from Paris, France, where he studied engineering, Tom has always been fascinated by the complexity of language through music- DJing since his early teens.<br /><br />
-							Currently Technical Director at AREA17 design agency and the founder of 143, he has been living in New York for four years now and has played at various venues including MoMa PS1.<br /><br />
+							Currently Technical Director at AREA 17 design agency and the founder of 143, he has been living in New York for four years now and has played at various venues including MoMa PS1.<br /><br />
 							Well traveled and stimulated by his surroundings, he is concerned not only with the art and technical skill involved in music, but how culture and people inform it.
 							Tom has managed to couple his knowledge of engineering with his creative pursuit to transcend sound.</p>
 					</div>
@@ -45,7 +45,7 @@ Template Name: About
 						</div>
 					</div>
 					<div class="team-info">
-						<p>Guillermo is a design maniac from Barcelona. He has a multidisciplinary background, switching between book design, web design, environmental graphics, visual identity and poster design. Currently works as an art director for Area 17. He can't design without listening.</p>
+						<p>Guillermo is a design maniac from Barcelona. He has a multidisciplinary background, switching between book design, web design, environmental graphics, visual identity and poster design. Currently works as an art director for AREA 17. He can't design without listening.</p>
 					</div>
 				</li>
 				<li>
