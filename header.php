@@ -18,7 +18,7 @@
 	  <meta property="og:title" content="<?php if( is_front_page() ) { echo 'Home'; } else { echo get_the_title(); } ?>" />
 	  <meta property="og:type" content="article" />
 	  <meta property="og:url" content="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>" />
-	  <meta property="og:image" content="<?php if( is_page() ) { echo get_bloginfo('template_directory') . '/images/about.jpg'; } else { echo  the_field('cover_image'); } ?>" />
+	  <meta property="og:image" content="<?php if( is_page() || is_front_page() ) { echo get_bloginfo('template_directory') . '/images/about.jpg'; } else { echo  the_field('cover_image'); } ?>" />
 	  <meta property="og:description" content="143 is an online publication dedicated to the art of the DJ. We invite DJs to play an intimate private session at our Brooklyn loft that culminates in an in-depth interview and a mixtape reflective of their influence and taste." />
 
     <link rel="stylesheet" media="screen" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
