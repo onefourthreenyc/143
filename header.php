@@ -15,8 +15,6 @@
     <title>143 | <?php if( is_front_page() ) { echo 'Home'; } else { echo get_the_title(); } ?></title>
 	  <meta name="title" content="143 | <?php if( is_front_page() ) { echo 'Home'; } else { echo get_the_title(); } ?>">
 	  <meta name="description" content="143 is an online publication dedicated to the art of the DJ. We invite DJs to play an intimate private session at our Brooklyn loft that culminates in an in-depth interview and a mixtape reflective of their influence and taste.">
-	  <meta name="author" content="143" />
-
 	  <meta property="og:title" content="<?php if( is_front_page() ) { echo 'Home'; } else { echo get_the_title(); } ?>" />
 	  <meta property="og:type" content="article" />
 	  <meta property="og:url" content="http://<?php echo $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>" />
