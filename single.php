@@ -34,7 +34,7 @@
 					      <a href="javascript:fbShare('<?php echo get_permalink( $post->ID ); ?>', '<?php the_title(); ?>', '<?php the_field('session_description'); ?>', '<?php the_field('cover_image'); ?>', 520, 350)"><i class="icon-facebook"></i></a>
 				      </li>
 				      <li class="twitter">
-					      <a href="https://twitter.com/home?status=<?php echo get_permalink( $post->ID ); ?>" target="_blank"><i class="icon-twitter"></i></a>
+					      <a href="javascript:twitterShare('<?php echo get_permalink( $post->ID ); ?>', '<?php the_title(); ?>', '<?php the_field('session_description'); ?>', '<?php the_field('cover_image'); ?>', 520, 350)"><i class="icon-twitter"></i></a>
 				      </li>
 			      </ul>
 		        </div>
@@ -206,10 +206,10 @@
           <div class="social square">
             <ul>
               <li>
-                <a href="http://www.facebook.com/sharer.php?u=<?php echo get_permalink( $post->ID ); ?>"><i class="icon-facebook"></i></a>
+	              <a href="javascript:fbShare('<?php echo get_permalink( $post->ID ); ?>', '<?php the_title(); ?>', '<?php the_field('session_description'); ?>', '<?php the_field('cover_image'); ?>', 520, 350)"><i class="icon-facebook"></i></a>
               </li>
               <li>
-                <a href="https://twitter.com/home?status=<?php echo get_permalink( $post->ID ); ?>"><i class="icon-twitter"></i></a>
+	              <a href="javascript:twitterShare('<?php echo get_permalink( $post->ID ); ?>', '<?php the_title(); ?>', '<?php the_field('session_description'); ?>', '<?php the_field('cover_image'); ?>', 520, 350)"><i class="icon-twitter"></i></a>
               </li>
             </ul>
           </div>
@@ -262,5 +262,10 @@
 		var winTop = (screen.height / 2) - (winHeight / 2);
 		var winLeft = (screen.width / 2) - (winWidth / 2);
 		window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width='+winWidth+',height='+winHeight);
+	}
+	function twitterShare(url, title, descr, image, winWidth, winHeight) {
+		var winTop = (screen.height / 2) - (winHeight / 2);
+		var winLeft = (screen.width / 2) - (winWidth / 2);
+		window.open('https://twitter.com/home?status=' + url, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width='+winWidth+',height='+winHeight);
 	}
 </script>
