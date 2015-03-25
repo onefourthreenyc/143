@@ -9,7 +9,7 @@
 		            </div>
 		            <div class="name">
 			            <span>
-				            <?php str_replace(' ',"\n",strtoupper(the_title())); ?>
+				            <?php str_replace(" ","<br \>",strtoupper(the_title())); ?>
 			            </span>
 		            </div>
 	            </h1>
