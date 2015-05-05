@@ -153,45 +153,46 @@
 	        <?php endif ?>
 	        <?php if( have_rows('blockquotes')): ?>
 		        <?php while ( have_rows('blockquotes') ) : the_row(); ?>
-			        <?php $blockquotes[] = get_sub_field('blockquote'); ?>
+			       <?php if(get_sub_field('position')): ?>
+				        <?php  $blockquotes[get_sub_field('position')] = array(
+				         'text' => get_sub_field('blockquote'),
+				         'side' => get_sub_field('side'),
+			            ); ?>
+	                <?php endif ?>
 		        <?php endwhile ?>
 	        <?php endif ?>
 	        <?php if( have_rows('captions')): ?>
 		        <?php while ( have_rows('captions') ) : the_row(); ?>
-			        <?php $captions[] = array (
-				        'title' => get_sub_field('caption_title'),
-				        'text' => get_sub_field('caption_text'),
-				        'image' => get_sub_field('caption_image')
-			        ); ?>
+			        <?php
+			        if(get_sub_field('position')) {
+				        $captions[get_sub_field('position')] = array (
+					        'title' => get_sub_field('caption_title'),
+					        'text' => get_sub_field('caption_text'),
+					        'image' => get_sub_field('caption_image')
+				        );
+			        }
+			        ?>
 		        <?php endwhile ?>
 	        <?php endif ?>
 	        <?php if( have_rows('qa') ): ?>
 				<?php $qa_counter = 0; ?>
 				<?php $images_counter = 0; ?>
-				<?php $caption_counter = 0; ?>
-				<?php $blockquotes_counter = 0; ?>
 		        <?php while ( have_rows('qa') ) : the_row(); ?>
 			        <p class="q"><?php echo the_sub_field('question'); ?></p>
 			        <p class="a"><?php echo the_sub_field('answer'); ?></p>
-			        <?php if(!empty($qa_counter) && $qa_counter %7 == 0): ?>
-				        <?php if(!empty($captions) && array_key_exists($caption_counter, $captions)): ?>
-					        <div class="sideright">
-						        <img src="<?php echo $captions[$caption_counter]['image']; ?>" />
-						        <div class="caption">
-							        <h3><?php echo $captions[$caption_counter]['title']; ?></h3>
-							        <p><?php echo $captions[$caption_counter]['text']; ?></p>
-						        </div>
+			        <?php if(!empty($captions) && array_key_exists($qa_counter, $captions)): ?>
+				        <div class="sideright">
+					        <img src="<?php echo $captions[$qa_counter]['image']; ?>" />
+					        <div class="caption">
+						        <h3><?php echo $captions[$qa_counter]['title']; ?></h3>
+						        <p><?php echo $captions[$qa_counter]['text']; ?></p>
 					        </div>
-				        <?php endif; ?>
-				        <?php $caption_counter++; ?>
+				        </div>
 			        <?php endif; ?>
-			        <?php if(!empty($qa_counter) && $qa_counter %5 == 0): ?>
-				        <?php if(!empty($blockquotes) && array_key_exists($blockquotes_counter, $blockquotes)): ?>
-					        <blockquote  <?php if($blockquotes_counter %2 == 0): ?>class="bqleft" <?php endif; ?>>
-						        <p><?php echo $blockquotes[$blockquotes_counter]; ?></p>
-					        </blockquote>
-				        <?php endif; ?>
-				        <?php $blockquotes_counter++; ?>
+			        <?php if(!empty($blockquotes) && array_key_exists($qa_counter, $blockquotes)): ?>
+				        <blockquote  <?php if($blockquotes[$qa_counter]['side'] == 'left'): ?>class="bqleft" <?php endif; ?>>
+					        <p><?php echo $blockquotes[$qa_counter]['text']; ?></p>
+				        </blockquote>
 			        <?php endif; ?>
 			        <?php if(!empty($qa_counter) && $qa_counter %4 == 0): ?>
 						<?php if(!empty($images) && array_key_exists($images_counter, $images)): ?>
