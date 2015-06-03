@@ -33,7 +33,7 @@
             container: $('body'),
             speed: 0.2,
             coverRatio: 1,
-            holderMinHeight: 200,
+            holderMinHeight: 2000,
             extraHeight: 0,
             mediaWidth: 1500,
             mediaHeight: 1000,
