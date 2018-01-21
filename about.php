@@ -66,11 +66,31 @@ Template Name: About
 				<li>
 					<div class="team-member">
 						<h2>
+<<<<<<< HEAD
+=======
+							<a href="http://selomesamuel.com/" target="_blank">Selomé Samuel</a>
+						</h2>
+						<div class="team-member-position">
+							Editorial Director
+						</div>
+					</div>
+					<div class="team-info">
+						<p>Obsessed with music since digging through her mother’s jazz records as a child, Selomé took a detour to study photography in college, but has always been interested in telling stories. A lifetime of making mixtapes for friends grew into the electronic blog Dipped in Dollars and then into creating custom playlists for brands. She now oversees all content for Converse Rubber Tracks, a recording studio in Brooklyn.</p>
+					</div>
+				</li>
+				<li>
+					<div class="team-member">
+						<h2>
+>>>>>>> a9a1acfeb9c97ce809881be7c63872c6bb29142b
 							Special Thanks
 						</h2>
 					</div>
 					<div class="team-info">
+<<<<<<< HEAD
 						<p><a href="http://www.romanproject.com/" target="_blank">Roman Duvi</a>, <a href="https://tabularasa-ny.com/" target="_blank">Sabrina Tamar</a>, <a href="http://selomesamuel.com/" target="_blank">Selomé Samuel</a></p>
+=======
+						<p><a href="http://www.romanproject.com/" target="_blank">Roman Duvi</a>, <a href="https://tabularasa-ny.com/" target="_blank">Sabrina Tamar</a></p>
+>>>>>>> a9a1acfeb9c97ce809881be7c63872c6bb29142b
 					</div>
 				</li>
 			</ul>

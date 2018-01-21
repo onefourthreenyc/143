@@ -33,7 +33,11 @@
             container: $('body'),
             speed: 0.2,
             coverRatio: 1,
+<<<<<<< HEAD
             holderMinHeight: 2000,
+=======
+            holderMinHeight: 200,
+>>>>>>> a9a1acfeb9c97ce809881be7c63872c6bb29142b
             extraHeight: 0,
             mediaWidth: 1500,
             mediaHeight: 1000,
